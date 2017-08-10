@@ -2,11 +2,12 @@
 
 ## 08、09目标
 * JavaWeb基础教程
-    * 购买的JavaWeb书籍从头到尾过一遍
-    * JavaWeb视频全部观看
-    * 相关代码实践
-    * 最简单JavaWeb开发实战
+    * 购买的JavaWeb书籍从头到尾过一遍
+    * JavaWeb视频全部观看
+    * 相关代码实践
+    * 最简单JavaWeb开发实战
     * JavaWeb移动端开发实践
+    
 * Database的宏观了解
     * SQL基础
     * MySQL
