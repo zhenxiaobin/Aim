@@ -162,4 +162,15 @@ int main(void)
 * 只能保留最大的成员那么大小的内存
 
 ### 位域
-* 位域：指定
+* 位域：指定字节来进行存储
+
+### C Typedef
+* 给原有类型起一个新的名字 typedef unsigned char BYTE;
+* typedef 仅可以为类型定义别名。#define还可以为数值定义别名
+* typedef编译器执行解释、#define预编译器处理
+
+### C输入输出
+* stdin:标准输入
+* stdout：标准输出
+* stderr：标准错误
+*
