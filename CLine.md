@@ -17,3 +17,8 @@ int main() {
 * $ gcc hello.c
 * $ ./a.out
 * 输出结果： Hello
+
+### C的令牌
+* 关键字、标识符、常量、字符串值，或者是一个符号
+     * printf("Hello, World! \n");
+             * 可分解为5个单独的令牌
