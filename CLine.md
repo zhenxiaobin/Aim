@@ -34,7 +34,7 @@ int main() {
                 * short  
                 * unsigned short  
                 * long  
-                * unsigned long  
+                * unsigned long
         * 浮点
 * 枚举类型：它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。
 * void：表明没有可用的值
