@@ -3,7 +3,7 @@
 |---|----|----:|
 |2017.08.11 09:52|mysql.tar.gz安装、启动关闭语句等|80%|
 |2017.08.11 10:06|JavaScript基础语法| 80% |
-|2017.08.11 15:00|Java函数作用于 |[链接]("http://www.runoob.com/js/js-scope.html")|
+|2017.08.11 15:00|Java函数作用于 |[链接](http://www.runoob.com/js/js-scope.html)|
 
 
 ## MySQL安装运行基础命令
