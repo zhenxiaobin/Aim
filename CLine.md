@@ -173,4 +173,27 @@ int main(void)
 * stdin:标准输入
 * stdout：标准输出
 * stderr：标准错误
-*
+* printf();
+* scanf();
+* 格式化输出：("%f, f);
+* 格式化输入:("%f", &f);给地址所在地赋值
+* getChar() putChar() 单一字符操作
+* gets(char \*s) puts(const char \*s)
+
+### C文件读写
+* 打开文件： File \*fopen(const char \* fileName, const char \* mode);
+* mode:r读取 w写 r+读写 w+读写，已存在截断为0长度 a+读写。读取从开头，写入只能追加
+* 处理二进制文件Mode:"rb", "wb", "ab", "rb+", "r+b", "wb+", "w+b", "ab+", "a+b"
+* 关闭文件：  int fclose( FILE \*fp ); 错误返回EOF，定义的常量
+* 下面是把字符写入到流中的最简单的函数：int fputc( int c, FILE \*fp );
+* 把一个以 null 结尾的字符串写入到流中 int fputs( const char *s, FILE *fp );
+* 读取文件 int fgetc( FILE \* fp );
+* char \*fgets( char \*buf, int n, FILE \*fp );
+* 二进制输入和输出:
+```C
+size_t fread(void *ptr, size_t size_of_elements, 
+             size_t number_of_elements, FILE *a_file);
+              
+size_t fwrite(const void *ptr, size_t size_of_elements, 
+             size_t number_of_elements, FILE *a_file);
+```
