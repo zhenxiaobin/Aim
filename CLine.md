@@ -26,15 +26,15 @@ int main() {
 ### 数据类型
 * 基本类型：算数类型->整数+浮点  
         * 整数  
-                * char
-                * unsign char
-                * signed char
-                * int
-                * unsign int
-                * short
-                * unsigned short
-                * long
-                * unsigned long
+                * char  
+                * unsign char  
+                * signed char  
+                * int  
+                * unsign int  
+                * short  
+                * unsigned short  
+                * long  
+                * unsigned long  
         * 浮点
 * 枚举类型：它们也是算术类型，被用来定义在程序中只能赋予其一定的离散整数值的变量。
 * void：表明没有可用的值
