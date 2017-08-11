@@ -47,10 +47,88 @@ int main() {
 * 常量定义为大写字母是一个很好的编程实践
 
 ### C存储类
-* auto：所有局部变量默认存储类，用在函数内，只能修饰局部变量
+* auto：所有局部变量默认存储类，用在函数内，只能修饰局部变量   auto int totalCount;
+* register：定义存储在寄存器中，非RAM中的局部变量,没有内存位置，不可用一元运算符&，变量最大迟钝等于寄存器尺寸。具体存储位置由硬件的实现和限制，定义粗腰快速访问的变量，例如计数器  register int miles;
+* static：声明周期内局部变量存储，全局变量默认存储类
+* extern：提供全局变量的引用，对所有的程序文件都是可见的。多文件共享全局变量或方法
+
+### 运算符
+* 算术运算符
+* 关系运算符
+* 逻辑运算符
+* 位运算符
+* 赋值运算符
+* 杂项运算符：sizeof()返回变量大小  &a返回a的实际地址  \*a指向一个变量  ?:条件表达式
+
+### 判断
+* if
+* if else
+* 嵌套 if else
+* switch
+* 嵌套switch
+* ?:三元运算符
+
+### 循环
+* while
+* for
+* do ... while
+* 嵌套循环
+* 循环控制：break continue goto
+* 无限循环 for( ; ; )
+
+### C函数
+* 定义：returnType functionName(param list) { body of function };
+* 函数声明：int max(int a, int b); 可在主函数中调用
+* 函数参数：传值调用、引用调用，传递指针
+
+### 作用域规则
+* 函数内部的局部变量
+* 函数外部的全局变量
+* 形参中的函数参数定义
+* 初始化局部变量和全局变量
+* int = 0;  char = '\0';  float = 0;  double = 0;  pointer = NULL;
+
+### C数组
+* 声明：type arrayName [arraySize]; -> double balance[40];
+* 初始化数组：double balance[2] = {0, 1.0};
+* 访问数组元祖：double index2 = balance[1];
+* C其它数组知识
+
+### C指针
+* 指针是一个变量，值是另一个变量的地址 type \*varName;  -> int \*a;
+* 使用指针：int var = 20;  int \*ip;  ip = &var;
+* C中NULL指针：标准库中值为0的常量
+* 指针详解等
+
+### C函数指针
+* 指向函数的指针变量
+* typedef int (\*fun_point)(int, int);
+* int max(int a, int b); --> int (\*p)(int, int) = &max
+* 回调函数：具体理解参考如下代码
 ```C
+#include <stdlib.h>  
+#include <stdio.h>
+// 回调函数
+void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))
 {
-  int count;
-  auto int totalCount;
+    for (size_t i=0; i<arraySize; i++)
+        array[i] = getNextValue();
+}
+// 获取随机值
+int getNextRandomValue(void)
+{
+    return rand();
+}
+int main(void)
+{
+    int myarray[10];
+    populate_array(myarray, 10, getNextRandomValue);
+    for(int i = 0; i < 10; i++) {
+        printf("%d ", myarray[i]);
+    }
+    printf("\n");
+    return 0;
 }
 ```
+
+### C字符串
