@@ -1,25 +1,3 @@
-# ***日程***
-|  日期  |  进程  |  完成度  |
-|---|----|----:|
-|2017.08.11 09:52|mysql.tar.gz安装、启动关闭语句等|80%|
-|2017.08.11 10:06|JavaScript基础语法| 80% |
-|2017.08.11 15:00|Java函数作用于 |[链接](http://www.runoob.com/js/js-scope.html)|
-
-
-## MySQL安装运行基础命令
-|功能|命令行|
-|---|---|
-|启动|sudo support-files/mysql.server start|
-|关闭|sudo support-files/mysql.server stop|
-|重启|sudo support-files/mysql.server restart|
-|检查运行状态|sudo support-files/mysql.server status|
-|初始化密码|cd /usr/local/mysql/bin  ./mysqladmin -u root password <your-password>|
-|连接数据库|./mysql -u root -p + password|
-    
-    
-    
-    
-
 # 2017下半年目标
 
 ## 08、09目标
