@@ -13,6 +13,10 @@
 |检查运行状态|sudo support-files/mysql.server status|
 |初始化密码|cd /usr/local/mysql/bin  ./mysqladmin -u root password <your-password>|
 |连接数据库|./mysql -u root -p + password|
+    
+    
+    
+    
 
 # 2017下半年目标
 
