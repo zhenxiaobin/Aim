@@ -6,6 +6,7 @@
 
 ## MySQL安装运行基础命令
 |功能|命令行|
+|---|---|
 |启动|sudo support-files/mysql.server start|
 |关闭|sudo support-files/mysql.server stop|
 |重启|sudo support-files/mysql.server restart|
