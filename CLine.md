@@ -197,4 +197,6 @@ size_t fread(void *ptr, size_t size_of_elements,
 size_t fwrite(const void *ptr, size_t size_of_elements, 
              size_t number_of_elements, FILE *a_file);
 ```
-[进度-C预处理器](http://www.runoob.com/cprogramming/c-preprocessors.html)
+
+### C预处理器
+* 编译过程中一个单独的步骤。文本替换工具。编译之前完成所需要的处理
