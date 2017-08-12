@@ -200,3 +200,30 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 
 ### C预处理器
 * 编译过程中一个单独的步骤。文本替换工具。编译之前完成所需要的处理
+* #define 定义宏
+* #include包含源代码文件
+* #undef取消已定义宏
+* #ifdef若宏已定义返回真
+* #ifndef若宏未定义返回真
+* #if如果给定条件为真则执行以下代码
+* #else上一条替代方案
+* #elif
+* #endif结束一个ifelse模块
+* #error遇到标准错误时输出错误信息
+* #pragma标准化方案向编译器发送特殊命令
+* \_\_DATE\_\_  TIME FILE LINE STDC
+* 宏延续运算符 \\单行容纳不下则在下一行继续
+
+### C头文件
+* #include <系统文件>
+* #include "用户头文件"
+* 只引用一次头文件 #ifndef HEADER_FILE #define HEADER_FILE ... #endif
+* 有条件引用 #if #elif #elif #endif
+
+### C强制类型转换
+* 格式：(type_name)expression
+* 整数提升：17 + 'c' = 116 'c'转化为ascii值
+* 算数转换 int->unsigned int->long->unsigned long->long long->float->double->long double
+
+###  C错误处理
+* perror 您传给他的字符串，后跟冒号
