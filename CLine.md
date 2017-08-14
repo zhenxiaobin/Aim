@@ -226,4 +226,11 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 * 算数转换 int->unsigned int->long->unsigned long->long long->float->double->long double
 
 ###  C错误处理
-* perror 您传给他的字符串，后跟冒号
+* perror 您传给他的字符串，后跟冒号，空格和当前错误的描述语句
+* strerror() 返回一个指针，指向当前错误的文本形式
+* fprintf(stderr, "打开文件错误: %s\n", strerror( errnum ));输出错误的方法
+
+### C递归
+* 自身调用自身。阶乘、菲波那切数列等实例、汉诺塔
+* 未经精心设计，一般不要使用递归
+
