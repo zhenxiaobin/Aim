@@ -249,4 +249,4 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 * void \*realloc(void \*address, int newsize); 该函数重新分配内存，把内存扩展到 newsize。
 * 使用 free() 函数释放内存 free(description);
 
-#
+### C命令行参数
