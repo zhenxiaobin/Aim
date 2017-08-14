@@ -250,3 +250,7 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 * 使用 free() 函数释放内存 free(description);
 
 ### C命令行参数
+* argc传入的参数个数
+* argv指一个指针数组，指向传递给程序的每个参数
+* argv[0] 存储程序的名称，argv[1] 是一个指向第一个命令行参数的指针，\*argv[n] 是最后一个参数。如果没有提供任何参数，argc 将为 1，否则，如果传递了一个参数，argc 将被设置为 2。
+* 使用一个用空格分隔的简单参数，参数括在双引号中，编译并执行上面的代码，它会产生下列结果：
