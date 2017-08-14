@@ -234,3 +234,19 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 * 自身调用自身。阶乘、菲波那切数列等实例、汉诺塔
 * 未经精心设计，一般不要使用递归
 
+### C可变参数
+* 函数 func() 最后一个参数写成省略号，即三个点号（...），省略号之前的那个参数是 int，代表了要传递的可变参数的总数。为了使用这个功能，您需要使用 stdarg.h 头文件，该文件提供了实现可变参数功能的函数和宏。
+* 在函数定义中创建一个 va_list 类型变量，该类型是在 stdarg.h 头文件中定义的。
+* 使用 int 参数和 va_start 宏来初始化 va_list 变量为一个参数列表。宏 va_start 是在 stdarg.h 头文件中定义的。
+* 使用 va_arg 宏和 va_list 变量来访问参数列表中的每个项。
+* 使用宏 va_end 来清理赋予 va_list 变量的内存。
+
+### C内存管理
+* C 中的动态内存管理。C 语言为内存的分配和管理提供了几个函数。这些函数可以在 <stdlib.h> 头文件
+* void \*calloc(int num, int size);在内存中动态地分配 num 个长度为 size 的连续空间，并将每一个字节都初始化为 0。所以它的结果是分配了 num*\size 个字节长度的内存空间，并且每个字节的值都是0。
+* void free(void \*address); 该函数释放 address 所指向的内存块,释放的是动态分配的内存空间
+* void \*malloc(int num); 在堆区分配一块指定大小的内存空间，用来存放数据。这块内存空间在函数执行完成后不会被初始化，它们的值是未知的。
+* void \*realloc(void \*address, int newsize); 该函数重新分配内存，把内存扩展到 newsize。
+* 使用 free() 函数释放内存 free(description);
+
+#
