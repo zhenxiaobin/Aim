@@ -24,13 +24,13 @@ JQuery     基础完成
 
 # 编程语言
 * Objc
-    * 核心框架
-    * 3rd框架: afn/sdwebimage/masonry
+	* 核心框架
+	* 3rd框架: afn/sdwebimage/masonry
 * Swift
-    * 核心框架
-    * 3rd框架：alomfire/kingfisher/snapt
+	* 核心框架
+	* 3rd框架：alomfire/kingfisher/snapt
 * Java
-    * jsp
+	* jsp
     * servlet
     * db-connect
     * jstl
