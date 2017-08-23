@@ -11,11 +11,11 @@
 * NoSql、MySQL
 
 ## 10、11、12目标
-* <del>JavaScript基础语法过一遍</del>,学习一些框架的使用等。2018也要在此处进行深入研究。
+* <del>JavaScript基础语法过一遍,学习一些框架的使用等。</del> **2018也要在此处进行深入研究。**
 ```
 JavaScript 基础完成
 Ajax       基础完成
-JQuery     正在进行中
+JQuery     基础完成
 ```
 * Python基础语法过一遍,2018要好好在Python上进行建树。
 
