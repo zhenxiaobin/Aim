@@ -31,26 +31,26 @@ JQuery     基础完成
 	* 3rd框架：alomfire/kingfisher/snapt
 * Java
 	* jsp
-    * servlet
-    * db-connect
-    * jstl
-    * struct2
-    * spring
-    * springMVC
-    * hibernat
-    * mybatis
-    * mysql/mongodb/oracle/nosql
-    * maven
-    * hadoop
+	* servlet
+	* db-connect
+	* jstl
+	* struct2
+	* spring
+	* springMVC
+	* hibernat
+	* mybatis
+	* mysql/mongodb/oracle/nosql
+	* maven
+	* hadoop
 * Python
-    * django
-    * ...
+	* django
+	* ...
 * C
 * C++
 * JavaScript
-    * jQuery
-    * ajax
-    * json
-    * jQuery EasyUI
+	* jQuery
+	* ajax
+	* json
+	* jQuery EasyUI
 * HTML+CSS
 * SQL、MySQL、sqlite
